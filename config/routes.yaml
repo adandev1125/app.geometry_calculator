@@ -3,3 +3,21 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+# route for triangle
+api_triangle:
+    path: /triangle/{a}/{b}/{c}
+    controller: App\Controller\GeometryController::triangle
+    methods: GET
+
+# route for circle
+api_circle:
+    path: /circle/{radius}
+    controller: App\Controller\GeometryController::circle
+    methods: GET
+
+# route for testing sum of diameter and surface
+api_sum_test:
+    path: /sum_test
+    controller: App\Controller\GeometryController::sum_test
+    methods: GET
