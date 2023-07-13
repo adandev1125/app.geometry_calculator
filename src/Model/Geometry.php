@@ -12,12 +12,6 @@ abstract class Geometry
     $this->type = $type;
   }
 
-  // set edges of a triangle
-  public function set_triangle_edges($a, $b, $c) {}
-
-  // set radius of a circle
-  public function set_circle_radius($radius) {}
-
   // calculate circumference of this geometry
   public abstract function calculate_circumference(): float;
 

@@ -2,13 +2,14 @@
 
 namespace App\Model;
 
+use CircleInterface;
 use Geometry;
 
 /**
  * Circle class
  * Extended from Geometry class
  */
-class Circle extends Geometry
+class Circle extends Geometry implements CircleInterface
 {
   private $radius;
   private const PI = 3.14;

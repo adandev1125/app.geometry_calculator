@@ -3,12 +3,13 @@
 namespace App\Model;
 
 use Geometry;
+use TriangleInterface;
 
 /**
  * Triangle class
  * Extended from Geometry
  */
-class Triangle extends Geometry
+class Triangle extends Geometry implements TriangleInterface
 {
   private $a;
   private $b;
