@@ -2,5 +2,5 @@
 
 interface TriangleInterface
 {
-  public function set_triangle_edges($a, $b, $c);
+  public function set_edges($a, $b, $c);
 }

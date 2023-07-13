@@ -19,7 +19,7 @@ class Circle extends Geometry implements CircleInterface
     parent::__construct("circle");
   }
 
-  public function set_circle_radius($radius)
+  public function set_radius($radius)
   {
     $this->radius = $radius;
   }

@@ -2,5 +2,5 @@
 
 interface CircleInterface
 {
-  public function set_circle_radius(float $radius);
+  public function set_radius(float $radius);
 }

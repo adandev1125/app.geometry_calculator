@@ -13,7 +13,7 @@ class GeometryController extends AbstractController
   public function triangle($a, $b, $c): Response
   {
     $triangle = GeometryFactory::createGeometry('triangle');
-    $triangle->set_triangle_edges($a, $b, $c);
+    $triangle->set_edges($a, $b, $c);
 
     $array_data = $triangle->get_array_data();
 
@@ -26,7 +26,7 @@ class GeometryController extends AbstractController
   public function circle($radius): Response
   {
     $circle = GeometryFactory::createGeometry('circle');
-    $circle->set_circle_radius($radius);
+    $circle->set_radius($radius);
 
     $array_data = $circle->get_array_data();
 
@@ -39,10 +39,10 @@ class GeometryController extends AbstractController
   public function sum_test(): Response
   {
     $circle = GeometryFactory::createGeometry('circle');
-    $circle->set_circle_radius(2);
+    $circle->set_radius(2);
 
     $triangle = GeometryFactory::createGeometry('triangle');
-    $triangle->set_triangle_edges(3, 4, 5);
+    $triangle->set_edges(3, 4, 5);
 
     $sum_of_circumference = $circle->sum_circumference($triangle);
     $sum_of_surface = $circle->sum_surface($triangle);

@@ -20,7 +20,7 @@ class Triangle extends Geometry implements TriangleInterface
     parent::__construct("triangle");
   }
 
-  public function set_triangle_edges($a, $b, $c)
+  public function set_edges($a, $b, $c)
   {
     $this->a = $a;
     $this->b = $b;
